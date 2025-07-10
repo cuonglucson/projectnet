@@ -32,14 +32,14 @@ pipeline {
                 bat 'dotnet publish -c Release -o ./publish'
             }
         }
-        /*stage ('Publish') {
+        stage ('Publish') {
             steps {
                 echo 'public 2 runnig folder'
             //iisreset /stop // stop iis de ghi de file 
                 bat 'xcopy "%WORKSPACE%\\publish" /E /Y /I /R "c:\\wwwroot\\myproject"'
             }
         }
-        stage('Deploy to IIS') {
+        /*stage('Deploy to IIS') {
             steps {
                 powershell Import-Module WebAdministration
                 if (-not (Test-Path IIS:\\Sites\\MySite)) {
