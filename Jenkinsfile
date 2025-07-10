@@ -4,7 +4,7 @@ pipeline {
         stage ('clone') {
             steps 
                 {
-                    git branch: 'main', url: 'https://github.com/cuonglucson/projectnet.git'
+                    git branch: 'master', url: 'https://github.com/cuonglucson/projectnet.git'
                 }
         }
     }
