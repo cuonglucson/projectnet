@@ -20,13 +20,13 @@ pipeline {
                 bat 'dotnet build  --configuration Release'
             }
         }
-        /*stage ('tests') {
+        stage ('tests') {
             steps{
                 echo 'running test...'
                 bat 'dotnet test --no-build --verbosity normal'
             }
         }
-        stage ('public den t thu muc') {
+        /*stage ('public den t thu muc') {
             steps{
                 echo 'Publishing...'
                 bat 'dotnet publish -c Release -o ./publish'
