@@ -26,13 +26,13 @@ pipeline {
                 bat 'dotnet test --no-build --verbosity normal'
             }
         }
-        /*stage ('public den t thu muc') {
+        stage ('public den t thu muc') {
             steps{
                 echo 'Publishing...'
                 bat 'dotnet publish -c Release -o ./publish'
             }
         }
-        stage ('Publish') {
+        /*stage ('Publish') {
             steps {
                 echo 'public 2 runnig folder'
             //iisreset /stop // stop iis de ghi de file 
