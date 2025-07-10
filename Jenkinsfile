@@ -14,7 +14,7 @@ pipeline {
                 bat 'dotnet restore'
             }
         }
-        stage ('build') {
+        /*stage ('build') {
             steps {
                 echo 'build project netcore'
                 bat 'dotnet build  --configuration Release'
@@ -46,6 +46,6 @@ pipeline {
                     New-Website -Name "MySite" -Port 81 -PhysicalPath "c:\\test1-netcore"
 
             }
-        } 
+        } */
     }
 }
